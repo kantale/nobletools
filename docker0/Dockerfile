@@ -7,3 +7,6 @@ apt-get install -y build-essential wget zip unzip less vim git
 # RUN apt-get install -y default-jre
 RUN apt-get install -y maven
 
+RUN git clone https://github.com/kantale/nobletools && cd nobletools && mvn package -DskipTests
+
+
